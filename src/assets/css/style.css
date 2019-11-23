@@ -1,3 +1,82 @@
 body{
-    background: red;
+    /* background: #4FBEFF;
+    color: white; */
+    margin: 0;
+    font-family: 'Avenir';
 }
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir'),
+         local('Avenir Regular'),
+         local('Avenir-Regular'),
+         url(../fonts/AvenirLTStd-Roman.otf) format('otf');
+  }
+  
+.Avenir {
+      font-family: 'Avenir';
+  }
+
+h1{
+    color: white;
+    font-size: 45px;;
+}
+
+li{
+    text-decoration: none;
+    color: #42b9ff;
+}
+
+.menu {
+    width: 100%;
+    float: left;
+    text-align:right;
+    position: fixed;
+    background: white;
+  }
+  
+  .menu ul li {
+    display:inline-block;
+    list-style-type: none;
+    text-align: left;
+    padding-right: 25px;
+  }
+  
+  .menu ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #3D6780;
+  }
+.forma{
+    padding-top: 14%;
+    padding-left: 12%;
+    padding-right: 12%;
+    background: #43B9FF;
+    height: 90vh;
+}
+
+.misBotones {
+
+    background-color: #ffffff;
+    border: 1px solid #09a1e8;
+    display: inline-block;
+    cursor: pointer;
+    color: #43B9FF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 80px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.misBotones:hover {
+    background-color: #0057a2;
+    color: white;
+}
+.misBotones:active {
+	position:relative;
+	top:1px;
+}
+
+
