@@ -1,5 +1,5 @@
 <template>
-    <line-chart :chart-data="commitReactData"></line-chart>
+    <line-chart :chart-data="commitReactData" v-if="commitReactData"></line-chart>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ export default {
    components: { LineChart },
    data () {
       return {
-        commitReactData: {}
+        commitReactData: undefined
       }
     },
     async created(){
