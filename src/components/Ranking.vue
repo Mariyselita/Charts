@@ -31,6 +31,7 @@ export default {
       viewData:false
     }
   },
+  //Se manda a llamar la info para el filtro por default y se le asigna la gráfica
   async created(){
     this.filter = 'default';
     const response = await this.getDataByFilter(this.filter);
@@ -38,7 +39,9 @@ export default {
     this.dataToChart = this.filters[this.filter];
     this.viewData=true;
   }, 
+
   methods: {
+    //Se obtiene la data de la api de gh recibiendo como parámetro el filtro deseado
     async getDataByFilter(filter){
         switch (filter) {
           case 'js':
@@ -61,6 +64,7 @@ export default {
               headers: { 'Accept':'application/vnd.github.v3+json'}
           });
     },
+    //Se construye el objeto para la data de la gráfica
     setToDataToChart(response,nameFilter){
       return {
         labels: response.data.items.slice(0,10).map(repository => repository.name),
@@ -75,16 +79,19 @@ export default {
         ]
       };
     },
+
+    //método que se le asigna al evento del select para el cambio de filtro 
     async onChangeSelect(event){
         this.viewData=false;
         this.filter = event.target.value;
+        //se valida que no tenga Información  el filtro si no la tiene se manda a llamar a la api de gh
         if(!this.filters[this.filter]){
           const response = await this.getDataByFilter(this.filter);
           this.filters[this.filter]=this.setToDataToChart(response,this.filter); 
           this.dataToChart = this.filters[this.filter];
           this.viewData=true;         
         }else{
-          setTimeout(() => {
+          setTimeout(() => { 
             this.dataToChart = this.filters[this.filter];
             this.viewData=true;
           });

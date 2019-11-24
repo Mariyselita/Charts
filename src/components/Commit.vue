@@ -15,6 +15,7 @@ export default {
          const response = await this.axios.get('https://api.github.com/repos/facebook/react/stats/commit_activity', {
             headers: { 'Accept':'application/vnd.github.v3+json'}
         });
+        //Se valida que la data del response de la api de gh sea un arreglo y tenga por lo menos 10 elements
         if (Array.isArray(response.data)&& response.data.length >= 10){
 
             this.commitReactData = {
