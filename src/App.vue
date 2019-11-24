@@ -4,8 +4,8 @@
         <nav class="menu" id="myTopnav">
             <ul>
                 <li style="float:left;">Bayonet</li>
-                <li><a href="">Column Chart</a></li>
-                <li><a href="">Line Chart</a></li>
+                <li><router-link to='/ranking'>Ranking repositories</router-link></li>
+                <li><router-link to='/commit'>Commit Activity</router-link></li>
             </ul>          
         </nav>
     </header>
