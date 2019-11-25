@@ -1,4 +1,8 @@
-# charts
+# Charts
+
+# Welcome to StackEdit!
+
+Welcome to Project **Charts**. If you want to learn about Charts, you can read me. Project created by Marisela Cadena.
 
 ## Project setup
 ```

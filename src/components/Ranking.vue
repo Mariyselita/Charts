@@ -1,13 +1,16 @@
 <template>
-    <div>
-      <bar-chart :chart-data="dataToChart" v-if="viewData"></bar-chart>
-      <select @change="onChangeSelect($event)">
+    <div class="container">
+      <div class="espacio">
+          <bar-chart :chart-data="dataToChart" v-if="viewData"></bar-chart>
+      <select class="miSelector" @change="onChangeSelect($event)">
         <option value="default">Default</option>
         <option value="js">Javascript</option>
         <option value="python">Python</option>
         <option value="go">Go</option>
         <option value="ruby">Ruby</option>
       </select>
+      </div>
+        
     </div>
     
 </template>
@@ -71,8 +74,8 @@ export default {
         datasets:[
           {
             label:nameFilter,
-            backgroundColor: 'blue',
-            borderColor: 'red',
+            backgroundColor: '#BFE3D9',
+            borderColor: '#41CABA',
             borderWidth: 1,
             data: response.data.items.slice(0,10).map(repository => repository.stargazers_count)
           }

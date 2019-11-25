@@ -27,6 +27,13 @@ li{
     color: #42b9ff;
 }
 
+.container{
+  padding-top: 80px;
+}
+.espacio{
+  padding: 28px;
+}
+
 .menu {
     width: 100%;
     float: left;
@@ -46,7 +53,21 @@ li{
     padding: 10px;
     text-decoration: none;
     color: #3D6780;
+    font-weight: bold;
   }
+  .lista:hover{
+    color: #2690d8 !important;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0057a26b;
+    color: white;
+    text-align: center;
+ }
 .forma{
     padding-top: 14%;
     padding-left: 12%;
@@ -56,7 +77,6 @@ li{
 }
 
 .misBotones {
-
     background-color: #ffffff;
     border: 1px solid #09a1e8;
     display: inline-block;
@@ -69,6 +89,7 @@ li{
     width: 100px;
     text-align: center;
     margin-bottom: 12px;
+    margin-right: 12px;
 }
 .misBotones:hover {
     background-color: #0057a2;
@@ -77,6 +98,29 @@ li{
 .misBotones:active {
 	position:relative;
 	top:1px;
+}
+
+.miSelector{
+  text-align: center;
+  padding: 10px 60px 10px 10px;
+  width: auto;
+  height: 40px;
+  border-radius: 2px;
+  margin-top: 22px;
+  font-size: 14px;
+  background: #f8f8f8;
+  color: gray;
+  font-weight: bolder;
+  border: 1px solid gray;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/arrow_down2-512.png) 98% / 40px no-repeat #eee;
+
+}
+.miSelector:focus { 
+  outline: none; 
 }
 
 

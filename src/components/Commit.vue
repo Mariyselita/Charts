@@ -1,5 +1,9 @@
 <template>
-    <line-chart :chart-data="commitReactData" v-if="commitReactData"></line-chart>
+<div class="container">
+    <div class="espacio">
+        <line-chart :chart-data="commitReactData" v-if="commitReactData"></line-chart>
+    </div>
+</div>
 </template>
 
 <script>
@@ -22,7 +26,8 @@ export default {
                 labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10'],
                 datasets: [{ 
                     label: 'React Commit Activity',
-                    borderColor: '#72c7DE',
+                    borderColor: '#53D0D0',
+                    backgroundColor: '#53d0d036',
                     data: response.data.slice(-10).map(week => week.total)
                 }],
                 
