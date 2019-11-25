@@ -1,8 +1,19 @@
 # Charts
 
-# Welcome to StackEdit!
+## Welcome to Charts!
 
-Welcome to Project **Charts**. If you want to learn about Charts, you can read me. Project created by Marisela Cadena.
+Welcome to Project **Charts**. If you want to learn about Charts, you can read me. Project created by Marisela Cadena :)
+
+## Demo
+
+[Data Analysis using Github API](https://mariyselita.github.io/Charts/)
+
+## Features
+
+- Written in **Vue**
+- Axios
+- Chartjs
+- Responsive for mobile
 
 ## Project setup
 ```
@@ -18,3 +29,4 @@ npm run serve
 ```
 npm run build
 ```
+
